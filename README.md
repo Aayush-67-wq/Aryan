@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aayush Paswan's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Reset and Global Styles */
         * {
@@ -18,7 +18,7 @@
         body {
             font-family: 'Roboto', sans-serif;
             color: #333;  /* Dark Gray Color for Text */
-            background-color:  black;
+            background-color: black;
             line-height: 1.6;
             height: 100%;
             overflow-x: hidden;
@@ -233,9 +233,61 @@
             }
         }
 
+        /* Social Media Icons Styles */
+        .social-icons {
+            display: flex; /* Use flexbox to arrange icons in a row */
+            justify-content: center; /* Center the icons */
+            list-style: none; /* Remove default list styling */
+            padding: 0; /* Remove padding */
+            margin-top: 20px; /* Add some space above the icons */
+        }
+
+        .social-icons li {
+            margin: 0 15px; /* Add space between icons */
+            transition: transform 0.3s; /* Animation for scaling */
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px; /* Width of the icon container */
+            height: 60px; /* Height of the icon container */
+            border-radius: 50%; /* Circular background */
+            text-decoration: none; /* Remove underline from links */
+            color: #fff; /* Default color for icons */
+            font-size: 1.5rem; /* Size of the icons */
+            transition: background-color 0.3s, box-shadow 0.3s; /* Smooth background transition on hover */
+            position: relative; /* Position for glowing effect */
+        }
+
+        /* Specific background colors for each social media platform */
+        .social-icons a.facebook {
+            background-color: #3b5998; /* Facebook Blue */
+        }
+
+        .social-icons a.whatsapp {
+            background-color: #25D366; /* WhatsApp Green */
+        }
+
+        .social-icons a.instagram {
+            background-color: #E1306C; /* Instagram Pink */
+        }
+
+        .social-icons a.email {
+            background-color: #D44638; /* Email Red */
+        }
+
+        .social-icons a:hover {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.3); /* Glowing effect */
+        }
+
+        .social-icons li:hover {
+            transform: scale(1.1); /* Scale effect on hover */
+        }
+
     </style>
 </head>
-
 <body>
 
     <header> <br></br>
@@ -252,9 +304,7 @@
     <!-- Home Section -->
     <section id="home">
         <h2>Welcome to My Portfolio</h2>
-        <p>I’m a passionate web developer.A curious mind with a passion for technology, constantly exploring the endless possibilities of coding and problem-solving."
-            Explore my work and contact me for collaborations.
-        </p>
+        <p>I’m a passionate web developer. A curious mind with a passion for technology, constantly exploring the endless possibilities of coding and problem-solving. Explore my work and contact me for collaborations.</p>
         <a href="#contact" class="btn">Get In Touch</a>
     </section>
 
@@ -263,14 +313,12 @@
         <h2>About Me</h2>
         <img src="https://i.pinimg.com/736x/50/87/e7/5087e7cc2cb8b58a3c316074afcd4d39.jpg" alt="profile image" class="profile-image">
         <p>Hi! I'm Aayush Paswan, a Class 11 student with a deep passion for ethical hacking, web development, and software development. I am dedicated to learning new skills and building innovative projects.</p>
-
-        </p>
     </section>
 
     <!-- Interests Section -->
     <section id="interests">
         <h2>My Interests</h2>
-        <p>In my free time, I Enjoy Watching Anime , Playing Games , and learning Programming Languages. I love exploring the intersection of creativity and technology.</p>
+        <p>In my free time, I enjoy watching anime, playing games, and learning programming languages. I love exploring the intersection of creativity and technology.</p>
         <div class="gallery">
             <img src="https://preview.redd.it/5n8hs34ztzk61.png?width=1080&crop=smart&auto=webp&s=7c2760d11d87d21107ba5acea68fd1461183b3a3" alt="Photography"> 
             <img src="https://wallpapercave.com/wp/wp11550270.jpg" alt="Gaming">
@@ -287,36 +335,21 @@
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
             <button type="submit">Send Message</button>
-     </form>
-  
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media Links</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
+        </form>
 
-    </style>
-</head>
-<body>
-    <div>
+        <!-- Social Media Links -->
         <h2>Follow Us on Social Media</h2>
         <ul class="social-icons">
-            <li><a href="https://www.facebook.com/share/1688d2SZgQ/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://wa.me/9823722475" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-            <li><a href="https://www.instagram.com/ab_ayush67?igsh=MXJuNHk4cDJyMWF5cA==" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="mailto:aayushpaswan359@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="https://www.facebook.com/share/1688d2SZgQ/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://wa.me/9823722475" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="https://www.instagram.com/ab_ayush67?igsh=MXJuNHk4cDJyMWF5cA==" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="mailto:aayushpaswan359@gmail.com" target="_blank" class="email"><i class="fas fa-envelope"></i></a></li>
         </ul>
-    </div>
     </section>
-    
 
     <footer>
         <p>&copy; 2025 Aayush Paswan. All rights reserved.</p>
     </footer>
 
 </body>
-
 </html>
